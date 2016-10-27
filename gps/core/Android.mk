@@ -18,11 +18,13 @@ endif
 
 LOCAL_SHARED_LIBRARIES := \
     libutils \
+    liblog \
     libcutils \
     libgps.utils \
     libdl
 
 LOCAL_SRC_FILES += \
+    MsgTask.cpp \
     LocApiBase.cpp \
     LocAdapterBase.cpp \
     ContextBase.cpp \
@@ -31,14 +33,15 @@ LOCAL_SRC_FILES += \
 
 LOCAL_CFLAGS += \
      -fno-short-enums \
-     -D_ANDROID_
+     -D_ANDROID_ \
+     -Wno-unused-parameter
 
 LOCAL_C_INCLUDES:= \
-    $(TARGET_OUT_HEADERS)/gps.utils \
-    $(TARGET_OUT_HEADERS)/libflp
+    $(TARGET_OUT_HEADERS)/gps.utils
 
 LOCAL_COPY_HEADERS_TO:= libloc_core/
 LOCAL_COPY_HEADERS:= \
+    MsgTask.h \
     LocApiBase.h \
     LocAdapterBase.h \
     ContextBase.h \
