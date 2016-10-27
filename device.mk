@@ -47,6 +47,9 @@ PRODUCT_COPY_FILES += \
     device/lge/bullhead/media_profiles.xml:system/etc/media_profiles.xml
 
 # Audio
+# Generic CAF config
+$(call inherit-product, hardware/qcom/audio/configs/msm8992/msm8992.mk)
+
 PRODUCT_COPY_FILES += \
     device/lge/bullhead/audio_effects.conf:system/etc/audio_effects.conf \
     device/lge/bullhead/mixer_paths.xml:system/etc/mixer_paths.xml \
