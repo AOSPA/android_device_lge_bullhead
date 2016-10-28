@@ -11,7 +11,13 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_SHARED_LIBRARIES := \
     libutils \
     libcutils \
-    libgps.utils
+    libqmi_cci \
+    libqmi_csi \
+    libqmi_common_so \
+    libgps.utils \
+    libdsi_netctrl \
+    libqmiservices
+
 
 LOCAL_SRC_FILES += \
     ds_client.c
