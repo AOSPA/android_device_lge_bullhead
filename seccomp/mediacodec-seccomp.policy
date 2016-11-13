@@ -1,0 +1,4 @@
+# device specific syscalls
+sendto: 1
+pselect6: 1
+recvfrom: 1
