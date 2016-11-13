@@ -169,6 +169,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     gralloc.msm8992 \
     hwcomposer.msm8992 \
+    copybit.msm8992 \
     libgenlock \
     memtrack.msm8992 \
     lights.bullhead
