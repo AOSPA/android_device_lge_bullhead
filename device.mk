@@ -303,7 +303,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=420
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.hwc.mdpcomp.enable=true
+    persist.hwc.mdpcomp.enable=true \
+    persist.mdp.partialUpdate=false
 
 # Enable low power video mode for 4K encode
 PRODUCT_PROPERTY_OVERRIDES += \
