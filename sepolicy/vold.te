@@ -6,6 +6,3 @@
 dontaudit vold proc_irq:dir { read open };
 
 get_prop(vold, qseecomtee_prop)
-
-# Allow vold to access zram
-allow vold swap_block_device:blk_file getattr;
