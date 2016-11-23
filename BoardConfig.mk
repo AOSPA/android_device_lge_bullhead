@@ -135,7 +135,7 @@ BOARD_SEPOLICY_DIRS += \
 
 TARGET_USES_64_BIT_BINDER := true
 
-TARGET_USES_AOSP := true
+TARGET_USES_VANILLA_CAMERA_HAL := true
 TARGET_USES_INTERACTION_BOOST := true
 
 # Force camera module to be compiled only in 32-bit mode on 64-bit systems
