@@ -34,7 +34,7 @@ PRODUCT_COPY_FILES := \
 PRODUCT_COPY_FILES += \
     device/lge/bullhead/init.bullhead.rc:root/init.bullhead.rc \
     device/lge/bullhead/init.bullhead.usb.rc:root/init.bullhead.usb.rc \
-    device/lge/bullhead/fstab.bullhead:root/fstab.bullhead \
+    device/lge/bullhead/fstab.aosp_bullhead:root/fstab.bullhead \
     device/lge/bullhead/ueventd.bullhead.rc:root/ueventd.bullhead.rc \
     device/lge/bullhead/init.recovery.bullhead.rc:root/init.recovery.bullhead.rc \
     device/lge/bullhead/init.bullhead.ramdump.rc:root/init.bullhead.ramdump.rc \
