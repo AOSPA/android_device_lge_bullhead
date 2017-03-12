@@ -71,7 +71,7 @@ on init
     write /proc/sys/vm/page-cluster 0
 
 on fs
-    mount_all ./fstab.bullhead
+    mount_all ./fstab.bullhead --early
     swapon_all ./fstab.bullhead
 
     restorecon_recursive /persist
@@ -184,14 +184,26 @@ on post-fs
     start qseecomd
     exec - root root system -- /system/bin/init.bullhead.qseecomd.sh
 
+on late-fs
+    # Enable audio device for bootanim
+    write /sys/kernel/boot_adsp/boot 1
+
+    # Start bootanim and its dependencies
+    start servicemanager
+    start surfaceflinger
+    start audioserver
+    start bootanim
+    # mount RW partitions which need run fsck
+    mount_all ./fstab.bullhead --late
+
 on post-fs-data
+    # restart qseecomd once we have /data/
+    restart qseecomd
     # Mark the copy complete flag to not completed
     mkdir /data/misc/radio 0770 radio radio
     write /data/misc/radio/copy_complete 0
     chown radio radio /data/misc/radio/copy_complete
     chmod 0660 /data/misc/radio/copy_complete
-
-    write /sys/kernel/boot_adsp/boot 1
 
     #Update touch firmware if required
     write /sys/bus/i2c/devices/2-0020/check_fw 1
