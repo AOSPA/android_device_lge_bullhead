@@ -452,7 +452,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Power HAL
 PRODUCT_PACKAGES += \
-    power.bullhead \
+    power.msm8992 \
     thermal.bullhead
 
 # Modem debugger/misc
