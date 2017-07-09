@@ -44,6 +44,11 @@
         <device name="SND_DEVICE_IN_UNPROCESSED_STEREO_MIC" acdb_id="144"/>
         <device name="SND_DEVICE_IN_UNPROCESSED_THREE_MIC" acdb_id="145"/>
         <device name="SND_DEVICE_IN_UNPROCESSED_QUAD_MIC" acdb_id="146"/>
+        <device name="SND_DEVICE_IN_CAMCORDER_MIC" acdb_id="61"/>
+        <device name="SND_DEVICE_IN_VOICE_REC_MIC" acdb_id="62"/>
+        <device name="SND_DEVICE_IN_VOICE_REC_MIC_NS" acdb_id="113"/>
+        <device name="SND_DEVICE_IN_VOICE_REC_DMIC_STEREO" acdb_id="35"/>
+        <device name="SND_DEVICE_IN_VOICE_REC_DMIC_FLUENCE" acdb_id="43"/>
     </acdb_ids>
     <backend_names>
         <device name="SND_DEVICE_OUT_HEADPHONES" backend="headphones" interface="SLIMBUS_5_RX"/>
