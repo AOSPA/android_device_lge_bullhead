@@ -49,20 +49,12 @@ PRODUCT_COPY_FILES += \
 
 # Audio
 PRODUCT_COPY_FILES += \
-    device/lge/bullhead/audio_effects.conf:system/etc/audio_effects.conf \
     device/lge/bullhead/mixer_paths.xml:system/etc/mixer_paths.xml \
     device/lge/bullhead/audio_platform_info.xml:system/etc/audio_platform_info.xml \
     device/lge/bullhead/audio_policy_configuration.xml:system/etc/audio_policy_configuration.xml \
-    device/lge/bullhead/audio_policy_volumes_drc.xml:system/etc/audio_policy_volumes_drc.xml \
-    frameworks/av/services/audiopolicy/config/a2dp_audio_policy_configuration.xml:system/etc/a2dp_audio_policy_configuration.xml \
-    frameworks/av/services/audiopolicy/config/r_submix_audio_policy_configuration.xml:system/etc/r_submix_audio_policy_configuration.xml \
-    frameworks/av/services/audiopolicy/config/usb_audio_policy_configuration.xml:system/etc/usb_audio_policy_configuration.xml \
-    frameworks/av/services/audiopolicy/config/default_volume_tables.xml:system/etc/default_volume_tables.xml \
+    device/lge/bullhead/audio_policy_volumes_drc.xml:system/etc/audio_policy_volumes_drc.xml
 
-#Sound Trigger
-PRODUCT_COPY_FILES += \
-    device/lge/bullhead/sound_trigger_mixer_paths.xml:system/etc/sound_trigger_mixer_paths.xml \
-    device/lge/bullhead/sound_trigger_platform_info.xml:system/etc/sound_trigger_platform_info.xml
+include hardware/qcom/audio/configs/msm8992/msm8992.mk
 
 # Input device files
 PRODUCT_COPY_FILES += \
@@ -175,14 +167,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libc2dcolorconvert \
     libstagefrighthw \
-    libOmxCore \
-    libmm-omxcore \
     libOmxVdec \
     libOmxVdecHevc \
     libOmxVenc
 
 # Audio HAL and utilities
-USE_XML_AUDIO_POLICY_CONF := 1
 PRODUCT_PACKAGES += \
     audio.primary.msm8992 \
     audio.a2dp.default \
@@ -197,6 +186,58 @@ PRODUCT_PACKAGES += \
     libqcomvisualizer \
     libqcompostprocbundle \
     libvolumelistener
+
+# Dash
+PRODUCT_PACKAGES += \
+    libdashplayer \
+    libqcmediaplayer \
+    qcmediaplayer \
+    libextmedia
+
+# Extended media
+PRODUCT_PACKAGES += \
+    libextendedmediaextractor \
+    libextendedmediaextractor_jni \
+    extendedmediaextractor \
+    ExtendedMediaPlayer
+
+# MM audio
+PRODUCT_PACKAGES += \
+    libOmxCore \
+    libmm-omxcore \
+    libOmxAacEnc \
+    libOmxAmrEnc \
+    libOmxEvrcEnc \
+    libOmxMp3Dec \
+    libOmxQcelp13Enc \
+    libOmxAc3HwDec \
+    libstagefright_soft_flacdec
+
+#OPENCORE
+PRODUCT_PACKAGES += \
+    libomx_aacdec_sharedlibrary \
+    libomx_avcdec_sharedlibrary \
+    libomx_m4vdec_sharedlibrary \
+    libomx_mp3dec_sharedlibrary \
+    libopencore_author \
+    libopencore_common \
+    libopencore_download \
+    libopencore_downloadreg \
+    libopencore_mp4local \
+    libopencore_mp4localreg \
+    libopencore_net_support \
+    libopencore_player \
+    libopencore_rtsp \
+    libopencore_rtspreg \
+    libpvplayer_engine \
+    libpvauthorengine \
+    pvplayer \
+    pvplayer_engine_test
+
+#PVOMX
+PRODUCT_PACKAGES += \
+    libqcomm_omx \
+    01_qcomm_omx
 
 PRODUCT_PACKAGES += \
     librmnetctl \
@@ -286,7 +327,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.audio.fluence.voicerec=false \
     persist.audio.fluence.speaker=true \
     persist.speaker.prot.enable=true \
-    ro.config.vc_call_vol_steps=7
+    ro.config.vc_call_vol_steps=7 \
+    audio.offload.buffer.size.kb=64
 
 # Qualcomm BT aptXHD
 PRODUCT_PROPERTY_OVERRIDES += \

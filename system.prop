@@ -1,0 +1,51 @@
+qcom.hw.aac.encoder=true
+
+#system props for the MM modules
+
+media.stagefright.enable-player=true
+media.stagefright.enable-http=true
+media.stagefright.enable-aac=true
+media.stagefright.enable-qcp=true
+media.stagefright.enable-fma2dp=true
+media.stagefright.enable-scan=true
+mmp.enable.3g2=true
+mm.enable.smoothstreaming=true
+media.aac_51_output_enabled=true
+
+#3379827: Decimal sum after adding WAV parser flag
+#37491 is decimal sum of supported codecs in AAL
+#codecs: DivX DivXHD AVI AC3 ASF AAC QCP DTS 3G2 MP2TS
+mm.enable.qcom_parser=3379827
+
+# Enable AwesomePlayer stats
+persist.debug.sf.statistics=1
+
+# Print clip name being played
+media.stagefright.log-uri=1
+
+#enable gapless by default
+audio.offload.gapless.enabled=true
+
+#Buffer size in kbytes for compress offload playback
+audio.offload.buffer.size.kb=64
+
+#Enable offload audio video playback by default
+audio.offload.video=true
+
+#Enable 16 bit PCM offload by default
+audio.offload.pcm.16bit.enable=true
+
+#Enable multi offload by default
+audio.offload.multiple.enabled=true
+
+#Enable 24 bit PCM offload by default
+audio.offload.pcm.24bit.enable=true
+
+#Enable audio track offload by default
+audio.offload.track.enable=true
+
+#Enable music through deep buffer
+audio.deep_buffer.media=true
+
+#Set minimal offload duration
+audio.offload.min.duration.secs=30
