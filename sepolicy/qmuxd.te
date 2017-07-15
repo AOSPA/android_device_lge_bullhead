@@ -1,0 +1,1 @@
+allow qmuxd sysfs_smdcntl_open_timeout:file w_file_perms;

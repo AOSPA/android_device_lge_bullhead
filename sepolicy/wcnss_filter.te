@@ -1,0 +1,1 @@
+allow wcnss_filter ttyHS0_device:chr_file rw_file_perms;

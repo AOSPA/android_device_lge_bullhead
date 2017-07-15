@@ -1,11 +1,3 @@
-# Policies for time daemon
-type time_daemon, domain, domain_deprecated;
-type time_daemon_exec, exec_type, file_type;
-type time_data_file, file_type, data_file_type;
-
-# Make transition to its own time_daemon domain from init
-init_daemon_domain(time_daemon)
-
 allow time_daemon self:capability { setuid setgid };
 allow time_daemon self:socket create_socket_perms;
 

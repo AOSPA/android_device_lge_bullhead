@@ -2,7 +2,6 @@ unix_socket_connect(mediaserver, thermal, thermal-engine)
 allow mediaserver thermal_socket:sock_file w_file_perms;
 
 allow mediaserver camera:unix_dgram_socket sendto;
-allow mediaserver camera_data_file:sock_file write;
 
 # allow communication w/perfd
 allow mediaserver perfd_data_file:dir search;
