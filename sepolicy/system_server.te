@@ -1,7 +1,3 @@
-# Grant access to Qualcomm MSM Interface (QMI) radio sockets to system services
-# (e.g., LocationManager)
-qmux_socket(system_server)
-
 allow system_server self:netlink_socket create_socket_perms;
 
 allow system_server per_mgr_service:service_manager find;
@@ -16,8 +12,9 @@ allow system_server sysfs_ssr:lnk_file r_file_perms;
 # Needed by hubconnection for sensor hub
 allow system_server sensors_device:chr_file rw_file_perms;
 allow system_server uhid_device:chr_file rw_file_perms;
-allow system_server persist_file:dir search;
+allow system_server persist_file:dir { search read };
 allow system_server persist_sensortool_file:file r_file_perms;
+allow system_server persist_file:file r_file_perms;
 
 # For location
 allow system_server location:unix_stream_socket connectto;
