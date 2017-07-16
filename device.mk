@@ -167,8 +167,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libc2dcolorconvert \
     libstagefrighthw \
-    libOmxCore \
-    libmm-omxcore \
     libOmxVdec \
     libOmxVdecHevc \
     libOmxVenc
@@ -188,6 +186,58 @@ PRODUCT_PACKAGES += \
     libqcomvisualizer \
     libqcompostprocbundle \
     libvolumelistener
+
+# Dash
+PRODUCT_PACKAGES += \
+    libdashplayer \
+    libqcmediaplayer \
+    qcmediaplayer \
+    libextmedia
+
+# Extended media
+PRODUCT_PACKAGES += \
+    libextendedmediaextractor \
+    libextendedmediaextractor_jni \
+    extendedmediaextractor \
+    ExtendedMediaPlayer
+
+# MM audio
+PRODUCT_PACKAGES += \
+    libOmxCore \
+    libmm-omxcore \
+    libOmxAacEnc \
+    libOmxAmrEnc \
+    libOmxEvrcEnc \
+    libOmxMp3Dec \
+    libOmxQcelp13Enc \
+    libOmxAc3HwDec \
+    libstagefright_soft_flacdec
+
+#OPENCORE
+PRODUCT_PACKAGES += \
+    libomx_aacdec_sharedlibrary \
+    libomx_avcdec_sharedlibrary \
+    libomx_m4vdec_sharedlibrary \
+    libomx_mp3dec_sharedlibrary \
+    libopencore_author \
+    libopencore_common \
+    libopencore_download \
+    libopencore_downloadreg \
+    libopencore_mp4local \
+    libopencore_mp4localreg \
+    libopencore_net_support \
+    libopencore_player \
+    libopencore_rtsp \
+    libopencore_rtspreg \
+    libpvplayer_engine \
+    libpvauthorengine \
+    pvplayer \
+    pvplayer_engine_test
+
+#PVOMX
+PRODUCT_PACKAGES += \
+	libqcomm_omx \
+	01_qcomm_omx
 
 PRODUCT_PACKAGES += \
     librmnetctl \
