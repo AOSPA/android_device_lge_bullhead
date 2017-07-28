@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "70a69ee0_4c22cc0c",
+        "filename": "BoardConfig.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 1000011
+      },
+      "writtenOn": "2017-07-28T16:23:57Z",
+      "side": 1,
+      "message": "This needs to go to vendor/pa instead",
+      "range": {
+        "startLine": 49,
+        "startChar": 0,
+        "endLine": 49,
+        "endChar": 40
+      },
+      "revId": "d34cb66096667d1674283f8ed99bc391a7b5200c",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "d289795e_404d1956",
+        "filename": "BoardConfig.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 1000011
+      },
+      "writtenOn": "2017-07-28T16:23:57Z",
+      "side": 1,
+      "message": "This is set by device/qcom/common already",
+      "range": {
+        "startLine": 57,
+        "startChar": 0,
+        "endLine": 57,
+        "endChar": 33
+      },
+      "revId": "d34cb66096667d1674283f8ed99bc391a7b5200c",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "615eb736_45e24be2",
+        "filename": "device.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 240,
+      "author": {
+        "id": 1000011
+      },
+      "writtenOn": "2017-07-28T16:23:57Z",
+      "side": 1,
+      "message": "Weird indentation",
+      "range": {
+        "startLine": 239,
+        "startChar": 0,
+        "endLine": 240,
+        "endChar": 13
+      },
+      "revId": "d34cb66096667d1674283f8ed99bc391a7b5200c",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad",
+      "unresolved": false
+    }
+  ]
+}
