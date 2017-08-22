@@ -186,3 +186,6 @@ ifeq ($(TARGET_PRODUCT),bullhead_svelte)
 BOARD_KERNEL_CMDLINE += mem=1024M
 MALLOC_SVELTE := true
 endif
+
+# Enable workaround for slow rom flash
+BOARD_SUPPRESS_SECURE_ERASE := true
