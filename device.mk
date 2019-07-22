@@ -397,7 +397,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.hwui.text_small_cache_width=1024 \
     ro.hwui.text_small_cache_height=1024 \
     ro.hwui.text_large_cache_width=2048 \
-    ro.hwui.text_large_cache_height=1024
+    ro.hwui.text_large_cache_height=1024 \
+	debug.sf.enable_gl_backpressure=1
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.frp.pst=/dev/block/platform/soc.0/f9824900.sdhci/by-name/persistent
