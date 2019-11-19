@@ -76,6 +76,10 @@ on fs
     mount_all ./fstab.bullhead
     swapon_all ./fstab.bullhead
 
+	# Avoid USB crash
+    setprop persist.adb.nonblocking_ffs 0
+    setprop ro.adb.nonblocking_ffs 0
+
     restorecon_recursive /persist
 
 on early-boot
