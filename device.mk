@@ -531,10 +531,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Modem debugger/misc
 ifneq (,$(filter userdebug eng, $(TARGET_BUILD_VARIANT)))
-ifeq (,$(filter aosp_bullhead, $(TARGET_PRODUCT)))
-PRODUCT_PACKAGES += \
-    NexusLogger
-endif # aosp_bullhead
 
 PRODUCT_COPY_FILES += \
     device/lge/bullhead/init.bullhead.diag.rc.userdebug:root/init.bullhead.diag.rc \
