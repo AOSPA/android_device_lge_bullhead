@@ -14,7 +14,6 @@
 
 # Qualcomm blob(s) necessary for Shamu hardware
 PRODUCT_COPY_FILES := \
-    vendor/qcom/bullhead/proprietary/ATFWD-daemon:system/bin/ATFWD-daemon:qcom \
     vendor/qcom/bullhead/proprietary/athdiag:system/bin/athdiag:qcom \
     vendor/qcom/bullhead/proprietary/cnd:system/bin/cnd:qcom \
     vendor/qcom/bullhead/proprietary/cnss-daemon:system/bin/cnss-daemon:qcom \
