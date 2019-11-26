@@ -1,4 +1,3 @@
-system/bin/ATFWD-daemon:qcom
 system/bin/athdiag:qcom
 system/bin/cnd:qcom
 system/bin/cnss-daemon:qcom

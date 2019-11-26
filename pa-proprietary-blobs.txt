@@ -21,7 +21,6 @@
 -app/HiddenMenu/HiddenMenu.apk
 -app/RCSBootstraputil/RCSBootstraputil.apk
 -app/TimeService/TimeService.apk
--priv-app/atfwd/atfwd.apk
 -priv-app/CNEService/CNEService.apk
 -priv-app/ConnMO/ConnMO.apk
 -priv-app/DCMO/DCMO.apk
@@ -34,7 +33,6 @@
 -priv-app/LifeTimerService/LifeTimerService.apk
 -priv-app/SprintDM/SprintDM.apk
 -priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
-bin/ATFWD-daemon
 bin/btnvtool
 bin/cnd
 bin/cnss-daemon

@@ -5,7 +5,6 @@
     ;;
   qcom)
     TO_EXTRACT="\
-            system/bin/ATFWD-daemon \
             system/bin/athdiag \
             system/bin/cnd \
             system/bin/cnss-daemon \
