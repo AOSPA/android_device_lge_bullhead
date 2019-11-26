@@ -20,7 +20,6 @@
 
 -app/HiddenMenu/HiddenMenu.apk
 -app/RCSBootstraputil/RCSBootstraputil.apk
--app/RcsImsBootstraputil/RcsImsBootstraputil.apk
 -app/TimeService/TimeService.apk
 -priv-app/atfwd/atfwd.apk
 -priv-app/CNEService/CNEService.apk
@@ -39,9 +38,6 @@ bin/ATFWD-daemon
 bin/btnvtool
 bin/cnd
 bin/cnss-daemon
-bin/ims_rtp_daemon
-bin/imsdatadaemon
-bin/imsqmidaemon
 bin/irsc_util
 bin/loc_launcher
 bin/location-mq
@@ -82,7 +78,6 @@ etc/permissions/com.google.android.camera.experimental2016.xml
 etc/permissions/privapp-permissions-bullhead.xml
 etc/permissions/qcrilhook.xml
 etc/permissions/qti_permissions.xml
-etc/permissions/rcsservice.xml
 etc/qcril.db
 etc/sap.conf
 etc/sysconfig/bullhead_common.xml
@@ -91,8 +86,6 @@ etc/thermal-engine-8992.conf
 -framework/cneapiclient.jar;PRESIGNED
 -framework/com.google.android.camera.experimental2016.jar;PRESIGNED
 -framework/qcrilhook.jar;PRESIGNED
--framework/rcsimssettings.jar;PRESIGNED
--framework/rcsservice.jar;PRESIGNED
 lib/libdmengine.so
 lib/libdmjavaplugin.so
 lib/libloc_api_v02.so
