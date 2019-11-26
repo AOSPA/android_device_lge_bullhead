@@ -24,6 +24,5 @@ allow hal_memtrack_default hal_light_default:file r_file_perms;
 allow hal_memtrack_default hal_usb_default:file r_file_perms;
 allow hal_memtrack_default hal_vr_default:file r_file_perms;
 allow hal_memtrack_default vr_hwc:file r_file_perms;
-allow hal_memtrack_default ims:file r_file_perms;
 allow hal_memtrack_default debugfs_smem:dir { search read open };
 allow hal_memtrack_default debugfs_smem:file rw_file_perms;

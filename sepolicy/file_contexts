@@ -39,8 +39,6 @@
 /dev/socket/thermal-recv-client                 u:object_r:thermal_socket:s0
 /dev/socket/thermal-recv-passive-client         u:object_r:thermal_socket:s0
 /dev/socket/msm_irqbalance                      u:object_r:msm_irqbalance_socket:s0
-/dev/socket/ims_qmid                            u:object_r:ims_socket:s0
-/dev/socket/ims_datad                           u:object_r:ims_socket:s0
 /dev/socket/cnd                                 u:object_r:cnd_socket:s0
 
 # factory reset protection partition
@@ -118,8 +116,6 @@
 /vendor/bin/sensortool\.bullhead   u:object_r:sensortool_exec:s0
 
 /vendor/bin/qti                    u:object_r:qti_exec:s0
-/system/bin/imsdatadaemon          u:object_r:ims_exec:s0
-/system/bin/imsqmidaemon           u:object_r:ims_exec:s0
 /system/bin/cnd                    u:object_r:cnd_exec:s0
 /vendor/bin/init\.bullhead\.power\.sh           u:object_r:init-power-sh_exec:s0
 /vendor/bin/init\.bullhead\.sh                  u:object_r:bullhead-sh_exec:s0
