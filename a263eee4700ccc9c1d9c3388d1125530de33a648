@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fbf1080d_8496fda2",
+        "filename": "pa-proprietary-blobs.txt",
+        "patchSetId": 1
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1000012
+      },
+      "writtenOn": "2019-11-26T23:19:30Z",
+      "side": 0,
+      "message": "why do we need this file and the other if some things are duplicated?",
+      "revId": "a263eee4700ccc9c1d9c3388d1125530de33a648",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "43fe61b0_9347cf2e",
+        "filename": "sepolicy/hal_memtrack_default.bak",
+        "patchSetId": 1
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 1000012
+      },
+      "writtenOn": "2019-11-26T23:19:30Z",
+      "side": 0,
+      "message": "kill this file",
+      "revId": "a263eee4700ccc9c1d9c3388d1125530de33a648",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad",
+      "unresolved": true
+    }
+  ]
+}
