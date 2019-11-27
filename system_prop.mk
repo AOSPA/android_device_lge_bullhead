@@ -194,3 +194,8 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.max_virtual_display_dimension=2048 \
     ro.surface_flinger.vsync_event_phase_offset_ns=2000000 \
     ro.surface_flinger.vsync_sf_event_phase_offset_ns=6000000
+
+# Ignore QPerf and UXPerf
+PRODUCT_PROPERTY_OVERRIDES += \
+    debug.qcom_ignore_qperf=true \
+    debug.qcom_ignore_uxperf=true
