@@ -16,6 +16,23 @@
       "message": "Can we do it even with ims entries on telephony.mk (vendor/pa)?",
       "revId": "b27126b47863e0efbb6d05734a83449e696a5d01",
       "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "075e414a_8e8210af",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000713
+      },
+      "writtenOn": "2021-09-20T19:49:06Z",
+      "side": 1,
+      "message": "Can we do it even with ims entries on telephony.mk (vendor/pa)?",
+      "revId": "b27126b47863e0efbb6d05734a83449e696a5d01",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
     }
   ]
 }
